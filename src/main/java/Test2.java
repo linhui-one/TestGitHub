@@ -8,11 +8,7 @@ public class Test2 {
         String ping = jedis.ping();
         System.out.println(ping);
 
-//        Set<String> keys = jedis.keys("*");
-//        for (String key : keys) {
-//            System.out.println(key);
-//        }
-
+//    123
 //        jedis.flushDB();
         jedis.set("k2","小红");
         String k2 = jedis.get("k2");
