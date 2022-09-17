@@ -7,9 +7,6 @@ public class Test2 {
         Jedis jedis = new Jedis("127.0.0.1",6379);
         String ping = jedis.ping();
         System.out.println(ping);
-
-//    123
-//        jedis.flushDB();
         jedis.set("k2","小红");
         String k2 = jedis.get("k2");
         System.out.println(k2);
